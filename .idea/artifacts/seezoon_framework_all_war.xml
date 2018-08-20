@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="seezoon-framework-all:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="seezoon-framework-all.war">
+      <element id="artifact" artifact-name="seezoon-framework-all:war exploded" />
+    </root>
+  </artifact>
+</component>
