@@ -12,3 +12,7 @@ logs/
 dist/
 node_modules/
 
+/screenshots/
+/db/seezoon-framework0522.sql
+/LICENSE
+/.idea/

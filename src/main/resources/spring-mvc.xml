@@ -54,7 +54,7 @@
     <mvc:interceptor>    
         <!-- 匹配的是url路径， 如果不配置或/**,将拦截所有的Controller -->  
         <mvc:mapping path="/**" />
-		<mvc:exclude-mapping path="/hello/**"/>
+		<!--<mvc:exclude-mapping path="/hello/**"/>-->
         <bean class="com.seezoon.framework.common.context.filter.TraceWebFilter"></bean>    
     </mvc:interceptor>
     <mvc:interceptor>    
@@ -91,6 +91,6 @@
 			</bean>
 		</property>
 	</bean>
-	<import resource="classpath:spring-message.xml"/>
+	<import resource="classpath:message/spring-message.xml"/>
 
 </beans>

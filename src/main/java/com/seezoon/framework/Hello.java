@@ -1,6 +1,7 @@
 package com.seezoon.framework;
 
 import com.seezoon.framework.common.context.beans.ResponeModel;
+import com.seezoon.framework.common.context.exception.ExceptionCode;
 import com.seezoon.framework.modules.system.solr.SolrService;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,10 +25,21 @@ public class Hello {
     @Autowired
     private SolrService solrService;
 
-    @RequestMapping(value = "/hello.do")
+    @RequestMapping(value = "/hello")
     @ResponseBody
     public ResponeModel hello(){
-        return ResponeModel.ok("成功");
+
+        ResponeModel responeModel = new ResponeModel();
+        responeModel.setResponeCode("90003");
+
+
+        return responeModel;
+    }
+
+    @RequestMapping(value = "/hello1")
+    @ResponseBody
+    public ResponeModel hello1(){
+        return ResponeModel.error("132");
     }
 
     @RequestMapping(value = "/search")

@@ -1,6 +1,8 @@
 package com.seezoon.framework.common.context.filter;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -12,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.hadoop.hdfs.server.datanode.fsdataset.LengthInputStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,6 +43,7 @@ public class CorsFilter implements Filter {
 			HttpServletResponse servletResponse = (HttpServletResponse) response;
 			HttpServletRequest servletRequest = (HttpServletRequest) request;
 			String origin = servletRequest.getHeader("Origin");
+
 			if (StringUtils.isNotEmpty(origin)) {
 				//允许客户端携带跨域cookie，此时origin值不能为“*”，只能为指定单一域名
 				servletResponse.setHeader("Access-Control-Allow-Origin", origin);
@@ -51,6 +55,8 @@ public class CorsFilter implements Filter {
 			servletResponse.setHeader("Access-Control-Expose-Headers", "*");
 			servletResponse.setHeader("Access-Control-Max-Age", "3600");
 			servletResponse.setHeader("Access-Control-Allow-Credentials", "true");
+			servletResponse.setHeader("language", servletRequest.getLocale().getLanguage());
+			servletResponse.setHeader("country", servletRequest.getLocale().getCountry());
 		}
 		chain.doFilter(request, response);
 	}

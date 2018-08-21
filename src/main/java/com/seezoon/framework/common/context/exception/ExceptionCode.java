@@ -8,6 +8,8 @@ public class ExceptionCode {
 	public final static String ILLEGAL = "90003";
 	public final static String PERMISSION_DENIED = "90004";
 
+	public final static String WELCOME = "welcome";
+	public final static String VERSION = "language.welcome";
 
 	
 }
