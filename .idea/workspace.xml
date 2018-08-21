@@ -6,21 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ba5fc0-3e1e-471d-ba86-e49cad253e4d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="46ba5fc0-3e1e-471d-ba86-e49cad253e4d" name="Default" comment="完善国际化 目前是中英切换 在使用平台提供的标转输出。具体是使用请查看com.seezoon.framework.common.context.support.SeezoonFastJsonHttpMessageConverter类中注释">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/common/context/exception/ExceptionCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/common/context/exception/ExceptionCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/common/context/filter/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/common/context/filter/CorsFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/common/context/support/SeezoonFastJsonHttpMessageConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/common/context/support/SeezoonFastJsonHttpMessageConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/message/common_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/message/language_en_US.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/message/common_zh_CN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/message/language_zh_CN.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-message.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/message/spring-message.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/seezoon/framework/modules/system/Messsage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/seezoon/framework/modules/system/solr/SolrServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seezoon/framework/modules/system/solr/SolrServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,7 +104,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/seezoon/framework/common/context/filter/CorsFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
+            <state relative-caret-position="107">
               <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
             </state>
           </provider>
@@ -419,7 +406,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534859155348" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534859666724" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringMVC" />
@@ -428,7 +415,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21878122" />
-    <property name="settings.editor.selected.configurable" value="MyBatisCodeHelper" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -730,7 +717,7 @@
       <workItem from="1534509660799" duration="45183000" />
       <workItem from="1534679099550" duration="9912000" />
       <workItem from="1534750416162" duration="12632000" />
-      <workItem from="1534809606160" duration="26321000" />
+      <workItem from="1534809606160" duration="26580000" />
     </task>
     <task id="LOCAL-00001" summary="Solr集成">
       <created>1534754852868</created>
@@ -739,7 +726,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534754852868</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完善国际化 目前是中英切换 在使用平台提供的标转输出。具体是使用请查看com.seezoon.framework.common.context.support.SeezoonFastJsonHttpMessageConverter类中注释">
+      <created>1534859427360</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534859427360</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -775,7 +769,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134446000" />
+    <option name="totallyTimeSpent" value="134705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -788,9 +782,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22768573" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22768573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -814,7 +807,7 @@
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="16" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="16" visible="true" weight="0.66775244" />
       <window_info anchor="bottom" id="Messages" order="17" weight="0.329718" />
       <window_info anchor="bottom" id="SonarLint" order="18" />
       <window_info anchor="bottom" id="Tail" order="19" />
@@ -1228,7 +1221,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seezoon/framework/common/context/filter/CorsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
+        <state relative-caret-position="107">
           <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
