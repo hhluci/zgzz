@@ -18,7 +18,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <!-- 自动别名 -->
-        <property name="typeAliasesPackage" value="com.seezoon.framework.modules"/>
+        <property name="typeAliasesPackage" value="com.seezoon.framework"/>
         <property name="typeAliasesSuperType" value="com.seezoon.framework.common.entity.BaseEntity"/>
         <!-- 扫描sql文件 -->
         <property name="mapperLocations" value="classpath:mappings/**/*.xml"/>
@@ -28,7 +28,7 @@
     <!-- 扫描basePackage下所有BaseDao子类接口 -->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
-        <property name="basePackage" value="com.seezoon.framework.modules"/>
+        <property name="basePackage" value="com.seezoon.framework"/>
         <!-- 找到BaseDao的子类 -->
         <property name="markerInterface" value="com.seezoon.framework.common.dao.BaseDao"/>
     </bean>

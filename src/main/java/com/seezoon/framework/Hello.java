@@ -1,7 +1,6 @@
 package com.seezoon.framework;
 
 import com.seezoon.framework.common.context.beans.ResponeModel;
-import com.seezoon.framework.common.context.exception.ExceptionCode;
 import com.seezoon.framework.modules.system.solr.SolrService;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.seezoon.framework.modules.system.cms.dao.ArticleDao">
+    <resultMap id="BaseResultMap" type="com.seezoon.framework.modules.system.cms.entity.Article">
+        <id column="id" jdbcType="VARCHAR"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="content" property="content"/>
+        <result column="search_keyword" property="searchKeyword" jdbcType="VARCHAR"/>
+        <result column="search_content" property="searchContent" jdbcType="VARCHAR"/>
+        <result column="click" property="click" jdbcType="INTEGER"/>
+        <result column="reply" property="reply" jdbcType="INTEGER"/>
+        <result column="is_use" property="isUse" jdbcType="INTEGER"/>
+        <result column="category" property="category" jdbcType="VARCHAR"/>
+        <result column="create_by" property="createBy" jdbcType="VARCHAR"/>
+        <result column="create_date" property="createDate" jdbcType="TIMESTAMP"/>
+        <result column="update_by" property="updateBy" jdbcType="VARCHAR"/>
+        <result column="update_date" property="updateDate" jdbcType="TIMESTAMP"/>
+        <result column="remarks" property="remarks" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        select * from  article;
+    </select>
+
+    <select id="findTitleAndUpdateDate" resultMap="BaseResultMap" parameterType="String">
+        select id, title, update_date from article where category = #{category}
+    </select>
+
+    <select id="findArticle" resultMap="BaseResultMap" parameterType="String">
+        select * from article where id = #{id}
+    </select>
+
+    <insert id="addArticle" parameterType="com.seezoon.framework.modules.system.cms.entity.Article">
+        insert into article (id, title, content, search_keyword, search_content, click, reply, is_use,
+                             category, create_by, create_date, update_by, update_date, remarks)
+        values (#{id, jdbcType=VARCHAR}, #{title, jdbcType=VARCHAR}, #{content}, #{searchKeyword, jdbcType=VARCHAR},
+                #{searchContent, jdbcType=VARCHAR},#{click, jdbcType=INTEGER}, #{reply, jdbcType=INTEGER}, #{isUse, jdbcType=INTEGER},
+                #{category, jdbcType=VARCHAR}, #{createBy, jdbcType=VARCHAR}, #{createDate, jdbcType=TIMESTAMP},
+                #{updateBy, jdbcType=VARCHAR}, #{updateDate, jdbcType=TIMESTAMP}, #{remarks, jdbcType=VARCHAR})
+    </insert>
+
+    <update id="updateArticle" parameterType="com.seezoon.framework.modules.system.cms.entity.Article">
+        update article
+        <set>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="content != null and content != ''">
+                content = #{content},
+            </if>
+            <if test="searchKeyword != null and searchKeyword != ''">
+                search_keyword = #{searchKeyword},
+            </if>
+            <if test="searchContent != null and searchContent != ''">
+                search_content = #{searchContent},
+            </if>
+            <if test="isUse != null and isUse != ''">
+                is_use = #{isUse},
+            </if>
+            <if test="category != null and category != ''">
+                catatory = #{category},
+            </if>
+            <if test="updateBy != null and updateBy != ''">
+                update_by = #{updateBy},
+            </if>
+            <if test="updateDate != null">
+                update_date = #{updateDate},
+            </if>
+            <if test="remarks != null and remarks != ''">
+                remarks = #{remarks}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <update id="updateClick" parameterType="String">
+        update article set click = click + 1 where id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="String">
+      delete from article where id = #{id}
+    </delete>
+
+</mapper>

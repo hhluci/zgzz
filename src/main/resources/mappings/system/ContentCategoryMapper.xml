@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.seezoon.framework.modules.system.cms.dao.CategoryDao">
+    <resultMap id="BaseResultMap" type="com.seezoon.framework.modules.system.cms.entity.Category">
+        <id column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="isuse" property="use" jdbcType="INTEGER"/>
+        <result column="order_no" property="orderNo" jdbcType="INTEGER"/>
+        <result column="create_by" property="createBy" jdbcType="VARCHAR"/>
+        <result column="create_date" property="createDate" jdbcType="TIMESTAMP"/>
+        <result column="update_by" property="updateBy" jdbcType="VARCHAR"/>
+        <result column="update_date" property="updateDate" jdbcType="TIMESTAMP"/>
+        <result column="remarks" property="remarks" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="BaseResultMap" parameterType="com.seezoon.framework.modules.system.cms.entity.Category">
+        select * from content_artical_category
+    </select>
+
+    <select id="findAllCategory" resultMap="BaseResultMap" parameterType="com.seezoon.framework.modules.system.cms.entity.Category">
+        select id, name from content_artical_category
+    </select>
+
+    <insert id="save" parameterType="com.seezoon.framework.modules.system.cms.entity.Category">
+        insert into content_artical_category (id, name, isuse, order_no, creat_by, create_date, update_by, update_date, remarks)
+        values (#{id, jdbcType=VARCHAR}, #{name, jdbcType=VARCHAR}, #{use, jdbcType=INTEGER}, #{orderNo, jdbcType=INTEGER},
+                #{createBy, jdbcType=VARCHAR}, #{createDate, jdbcType=TIMESTAMP}, #{updateBy, jdbcType=VARCHAR},
+                #{updateDate, jdbcType=TIMESTAMP}, #{remarks, jdbcType=VARCHAR})
+    </insert>
+
+    <update id="update" parameterType="com.seezoon.framework.modules.system.cms.entity.Category">
+        update content_artical_category
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="use != null">
+                isuse = #{use},
+            </if>
+            <if test="orderNo != null">
+                order_no = #{orderNo},
+            </if>
+            <if test="updateBy != null">
+                update_by = #{updateBy},
+            </if>
+            <if test="updateDate != null">
+                update_date = #{updateDate},
+            </if>
+            <if test="remarks != null and remarks != ''">
+                remarks = #{remarks},
+            </if>
+
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="delect" parameterType="String">
+        delete from content_artical_category where id = #{id}
+    </delete>
+
+</mapper>
