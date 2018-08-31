@@ -6,25 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ba5fc0-3e1e-471d-ba86-e49cad253e4d" name="Default" comment="完善国际化 目前是中英切换 在使用平台提供的标转输出。具体是使用请查看com.seezoon.framework.common.context.support.SeezoonFastJsonHttpMessageConverter类中注释">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/Controller/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/Controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/dao/ArticleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/dao/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/entity/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappings/system/ArticleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappings/system/ContentCategoryMapper.xml" afterDir="false" />
+    <list default="true" id="46ba5fc0-3e1e-471d-ba86-e49cad253e4d" name="Default" comment="内容管理后台 加入权限管理">
+      <change afterPath="$PROJECT_DIR$/db/seezoon-framework.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/web/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/env/dev/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/env/dev/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-jdbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-jdbc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/seezoon/framework/modules/system/dao/SysFileDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seezoon/framework/modules/system/dao/SysFileDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seezoon-framework0522.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seezoon-frameworkv2.0.0.sql" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,7 +93,7 @@
           <entry key="language" value="5" />
           <entry key="project" value="1" />
           <entry key="properties" value="34" />
-          <entry key="sql" value="3" />
+          <entry key="sql" value="7" />
           <entry key="xml" value="109" />
         </counts>
       </usages-collector>
@@ -125,7 +111,7 @@
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="34" />
           <entry key="ResourceBundle" value="11" />
-          <entry key="SQL" value="2" />
+          <entry key="SQL" value="6" />
           <entry key="Scratch" value="1" />
           <entry key="UML" value="2" />
           <entry key="XML" value="109" />
@@ -136,14 +122,14 @@
           <entry key="dummy" value="27" />
           <entry key="java" value="12940" />
           <entry key="properties" value="273" />
-          <entry key="txt" value="183" />
+          <entry key="txt" value="208" />
           <entry key="xml" value="3370" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="12940" />
-          <entry key="PLAIN_TEXT" value="210" />
+          <entry key="PLAIN_TEXT" value="235" />
           <entry key="Properties" value="273" />
           <entry key="SQL" value="45" />
           <entry key="XML" value="3325" />
@@ -258,18 +244,6 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/dao/ArticleDao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="682">
-                  <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/resources/mappings/system/ContentCategoryMapper.xml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="418">
@@ -278,24 +252,19 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/resources/mappings/system/ArticleMapper.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+                <state relative-caret-position="439">
+                  <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/Controller/ArticleController.java">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/db/seezoon-framework.sql">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1694">
-                  <caret line="85" column="153" selection-start-line="85" selection-start-column="153" selection-end-line="85" selection-end-column="153" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
+                <state relative-caret-position="-7253" />
               </provider>
             </entry>
           </file>
@@ -600,6 +569,11 @@
             <path>
               <item name="seezoon-framework-all" type="b2602c69:ProjectViewProjectNode" />
               <item name="seezoon-framework-all" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seezoon-framework-all" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seezoon-framework-all" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="seezoon-framework-all" type="b2602c69:ProjectViewProjectNode" />
@@ -1152,7 +1126,7 @@
       <workItem from="1535453367964" duration="575000" />
       <workItem from="1535455810082" duration="9095000" />
       <workItem from="1535528659357" duration="1432000" />
-      <workItem from="1535626027850" duration="5623000" />
+      <workItem from="1535626027850" duration="6522000" />
     </task>
     <task id="LOCAL-00001" summary="Solr集成">
       <created>1534754852868</created>
@@ -1175,7 +1149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534859859968</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="内容管理后台 加入权限管理">
+      <created>1535688417009</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535688417009</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1211,7 +1192,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243777000" />
+    <option name="totallyTimeSpent" value="244676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1224,8 +1205,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23196152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23196152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1244,7 +1226,7 @@
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32905984" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="9" />
       <window_info anchor="bottom" id="Application Servers" order="10" weight="0.32905984" />
-      <window_info active="true" anchor="bottom" id="Spring" order="11" visible="true" weight="0.32790446" />
+      <window_info anchor="bottom" id="Spring" order="11" visible="true" weight="0.32790446" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32899022" />
@@ -1304,34 +1286,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Solr集成" />
     <MESSAGE value="完善国际化 目前是中英切换 在使用平台提供的标转输出。具体是使用请查看com.seezoon.framework.common.context.support.SeezoonFastJsonHttpMessageConverter类中注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善国际化 目前是中英切换 在使用平台提供的标转输出。具体是使用请查看com.seezoon.framework.common.context.support.SeezoonFastJsonHttpMessageConverter类中注释" />
+    <MESSAGE value="内容管理后台 加入权限管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="内容管理后台 加入权限管理" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/seezoon/framework/modules/cms/service/category/impl/CategoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/web/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="25" column="103" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-jdbc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1603,7 +1565,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seezoon/framework/modules/system/cms/dao/ArticleDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
+        <state relative-caret-position="770">
           <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1718,11 +1680,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/seezoon-frameworkv2.0.0.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seezoon-framework0522.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappings/system/ArticleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+        <state relative-caret-position="439">
+          <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seezoon-framework.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7253" />
       </provider>
     </entry>
   </component>
